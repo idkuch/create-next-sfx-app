@@ -1,7 +1,7 @@
 {
 	"name": "create-next-sfx-app",
 	"description": "Next.js Typescript Starter enhanced with Eslint, Prettier, RTL",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"bin": "./bin/cli.js",
 	"keywords": [
 		"nextjs",
