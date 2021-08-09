@@ -45,5 +45,5 @@ if (!setupedHusky) {
 console.log('Successfully setuped hooks.');
 
 console.log(
-	"Everything done. Run 'cd ${repoName} && yarn dev' to start developing."
+	`Everything done. Run 'cd ${repoName} && yarn dev' to start developing.`
 );
