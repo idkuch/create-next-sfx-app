@@ -16,7 +16,7 @@ const runCommand = (command) => {
 const repoName = process.argv[2];
 const gitCheckoutCommand = `git clone --depth 1 https://github.com/davek-k/create-next-sfx-app ${repoName}`;
 const installDepsCommand = `cd ${repoName} && yarn`;
-const setupHuskyCommand = `yarn husky install`;
+const setupHuskyCommand = `cd ${repoName} && yarn husky install`;
 
 console.log(`Cloning the repository with name ${repoName}`);
 const checkedOut = runCommand(gitCheckoutCommand);
