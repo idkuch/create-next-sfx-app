@@ -1,22 +1,56 @@
 {
-  "name": "test1",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "11.0.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
-  "devDependencies": {
-    "@types/react": "17.0.16",
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.0.1",
-    "typescript": "4.3.5"
-  }
+	"name": "create-next-sfx-app",
+	"description": "Next.js Typescript Starter enhanced with Eslint, Prettier, RTL",
+	"version": "1.0.0",
+	"bin": "./bin/cli.js",
+	"keywords": [
+		"nextjs",
+		"nextjs-starter",
+		"nextjs-typescript-starter"
+	],
+	"author": {
+		"name": "dawid kucharski",
+		"email": "hi@dkuch.com",
+		"url": "https://dkuch.com"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/davek-k/create-next-sfx-app"
+	},
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"lint:watch": "esw -w -c ./.eslintrc --ext .ts --color",
+		"test": "jest",
+		"test:watch": "jest --watchAll --config jest.config.js --collectCoverage=false"
+	},
+	"dependencies": {
+		"next": "11.0.1",
+		"react": "17.0.2",
+		"react-dom": "17.0.2"
+	},
+	"devDependencies": {
+		"@testing-library/dom": "^8.1.0",
+		"@testing-library/jest-dom": "^5.14.1",
+		"@testing-library/react": "^12.0.0",
+		"@types/jest": "^26.0.24",
+		"@types/react": "17.0.16",
+		"@typescript-eslint/eslint-plugin": "^4.29.0",
+		"@typescript-eslint/parser": "^4.29.0",
+		"babel-jest": "^27.0.6",
+		"eslint": "7.32.0",
+		"eslint-config-next": "11.0.1",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-watch": "^7.0.0",
+		"husky": "^7.0.1",
+		"identity-obj-proxy": "^3.0.0",
+		"jest": "^27.0.6",
+		"jest-dom": "^4.0.0",
+		"lint-staged": "^11.1.2",
+		"prettier": "^2.3.2",
+		"typescript": "4.3.5"
+	}
 }
